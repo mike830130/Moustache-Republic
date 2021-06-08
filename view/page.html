@@ -1,0 +1,149 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/page.js"></script>
+    <link rel="stylesheet" href="../bootstrap-3.4.1-dist/css/bootstrap.min.css">  
+    <style>
+      a:link{
+        text-decoration:none; 
+      }
+      a:visited{
+        text-decoration:none; 
+      }
+      a:hover{
+        text-decoration:none;
+      }
+      a:active{
+        text-decoration:none;
+      }
+
+      .div_buttom_border{
+        border-width: 0 0 1px 0;
+        border-style: solid;
+        border-color:#F8F8F8;
+      }
+      .div_size_options{
+        border-width: 1px;
+        border-style: solid;
+        border-color:#222222;
+        height: 40px;
+        width: 40px;
+        margin-right: 5px;
+        font-size: 14px;
+      }
+      .div_size_options>a {
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: -1px;
+        color: #222222;
+      }
+      .div_add{
+        font-size: 15px;
+        color: #222222;
+        margin-top: 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-color:#222222;
+        width: 50%;
+      }
+      .div_add>a {
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        color: #222222;
+      }
+      .div_add:hover {
+        background-color: #222222;
+      }
+      
+      .div_mycart_detail {
+        border-width: 1px;
+        border-style: solid;
+        border-color:#888888;
+        background-color: #ffffff;
+      }
+
+      .div_mycart_btn {
+        border-width: 1px;
+        border-style: solid;
+        border-color:#888888;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" style="width: 100%;" >
+     <div class="row" style="background-color: #F6F6F7;height: 50px;" id="mycartTop">
+      <div class="col-md-1 col-md-offset-10" id="div_my_cart_container" style="height: 100%;"> 
+        <a href="#" style="display: inline-block;margin-top: 15px;color: #222222;">My Cart 
+          <label id="myCart" style="font-weight: 400;"></label>
+        </a>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 15px;"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <img id="itemImg" src="../source/img/classic-tee.jpg"/>
+        </div>
+        <div class="col-md-3 col-md-offset-2">
+          <div class="div_buttom_border">
+             <h3 style="margin-bottom:30px;color: #222222;" id="itemName">Classic Tee</h3> 
+          </div>
+          <div class="div_buttom_border">
+            <h4 style="margin-bottom:20px;color: #222222;" id="itemPrice">$75.00</h4> 
+         </div>
+         <div style="color: #888888;">
+          <p>
+            Dolor sit amet, consectetur adipiscing elit. Haec et tu uta posuisti, et verb verstra sunt.
+            Quod autem ratione actum est, id officium appellamus dolor sit amet, consectetur adipiscing elit. 
+            Haec et tu uta posuisti, et verb verstra sunt. Quod autem ratione actum est, id officium appellamus
+          </p>
+       </div>
+       <div style="margin-top: 30px;">
+        <label style="color: #888888;">SIZE</label>
+        <label style="color:C90000">*</label>
+        <label id="selected"></label>
+       </div>
+       <div style="width: 50%;">
+         <div class="col-md-4 div_size_options">
+           <a href="#">S</a>
+         </div>
+         <div class="col-md-4 div_size_options">
+          <a href="#">M</a>
+         </div>
+         <div class="col-md-4 div_size_options">
+          <a href="#">L</a>
+         </div>
+       </div>
+       <div style="clear: both;"></div>
+       <div class="col-md-4 div_add" id="btn_add">
+        <a href="#" id="btn_add_link">ADD TO CART</a>
+      </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" style="position: fixed; top: 100px;" id="mycartDetailRow">
+        <div id="myCartDetail" class="div_mycart_detail col-md-12">
+          <ul style="margin-top:10px; list-style: none;" id="myCartDetailUL">
+            <li style="margin-top:10px;">
+              <div class="row">
+                <div class="col-md-3" style="width: auto;">
+                  <img style="width: 70px; height: 100px; display: inline-block;" src="../source/img/classic-tee.jpg">
+                </div>
+                <div class="col-md-5" style="width: auto;">
+                  <label style="margin-bottom: 10px;">Classi Tee</label>
+                  <br>
+                  <label style="margin-bottom: 20px;">1</label> * <label>$75</label>
+                  <br>
+                  <label>Size:</label><label>S</label>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
